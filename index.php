@@ -23,26 +23,30 @@
             <h2>Usuarios Registrados</h2>
             <table>
                 <thead>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Username</th>
-                    <th>Password</th>
-                    <th>Email</th>
-
-                    <th></th>
-                    <th></th>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Usuario</th>
+                        <th>Contraseña</th>
+                        <th>Email</th>
+    
+                        <th></th>
+                        <th></th>
+                    </tr>
                 </thead>
                 <body>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-
-                    <th> <a href="">Editar</a> </th>
-                    <th> <a href="">Eliminar</a> </th>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+    
+                        <th> <a href="">Editar</a> </th>
+                        <th> <a href="">Eliminar</a> </th>
+                    </tr>
                 </body>
             </table>
         </div>
