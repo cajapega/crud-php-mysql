@@ -1,3 +1,18 @@
+/*
+<?php
+    #se agrega el archivo
+    include('connection.php');
+
+    #variable que va a ser igual a lo que defina la funcion conexion
+    $con = conexion();
+
+    #Se crear uun query en sqpl q esta contenido en la variable y lo 
+    #ejecuto pasando el parametro de conexion y el query a consultar
+    $sql = "SELECT *FROM users";
+    $query = mysqli_query($con, $sql);
+?>
+*/
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -36,13 +51,19 @@
                     </tr>
                 </thead>
                 <body>
+                    <?php 
+                    #while recorre la info de los datos del user, es asi como tengo
+                    #una variable fila que recorre el query por medio de la variable
+                    #los th imprimen cada campo de la fila y por cada user
+                    while($row = mysqli_fetch_array($query)): 
+                    ?>
                     <tr>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
+                        <th> <?= $row['id']?> </th>
+                        <th> <?= $row['name']?> </th>
+                        <th> <?= $row['lastname']?> </th>
+                        <th> <?= $row['username']?> </th>
+                        <th> <?= $row['password']?> </th>
+                        <th> <?= $row['email']?> </th>
     
                         <th> <a href="">Editar</a> </th>
                         <th> <a href="">Eliminar</a> </th>
